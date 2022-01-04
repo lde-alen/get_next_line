@@ -6,7 +6,7 @@
 /*   By: lde-alen <lde-alen@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/23 13:15:27 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/23 13:17:13 by lde-alen         ###   ########.fr       */
+/*   Updated: 2022/01/04 13:22:25 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,7 @@ char	*ft_strjoin(char *str, char *buffer)
 	}
 	if (!str || !buffer)
 		return (NULL);
-	new = (char *)malloc(sizeof(char) * \
-		(ft_strlen(str) + ft_strlen(buffer) + 1));
+	new = malloc(sizeof(char) * (ft_strlen(str) + ft_strlen(buffer) + 1));
 	if (!new)
 		return (NULL);
 	ft_ini2(&i, &j);
